@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Search Visualizer</title>
+  </head>
+  <nav class="navbar fixed-top bg-warning">
+    <div class="justify-content-start">
+      <form onsubmit="return false">
+        <!--return false to stop the page from refreshing-->
+        <input
+          placeholder="Starting Number"
+          type="text"
+          class="form-control-sm"
+          id="start"
+          value=""
+        />
+        &emsp;
+        <input
+          placeholder="Ending Number"
+          type="text"
+          class="form-control-sm"
+          id="end"
+          value=""
+        />
+        &emsp;
+        <button class="btn btn-primary" type="submit" onclick="addElements()">
+          Enter
+        </button>
+        &emsp;
+        <button class="btn btn-primary" type="submit" onclick="refresh()">
+          Reset
+        </button>
+      </form>
+    </div>
+    <div class="justify-content-end">
+      <form onsubmit="return false">
+        <input
+          placeholder="Search Element"
+          type="text"
+          class="form-control-sm"
+          id="searchElement"
+          value=""
+        />
+        &emsp;
+        <button class="btn btn-primary" onclick="LinearSearch()">
+          Linear Search
+        </button>
+        &emsp;
+        <button class="btn btn-primary" onclick="BinarySearch()">
+          Binary Search
+        </button>
+        &emsp;
+        <button class="btn btn-primary" onclick="ExponentialSearch()">
+          Exponential Search
+        </button>
+      </form>
+    </div>
+  </nav>
+  <br /><br />
+  <body class="bg-dark">
+    <br />
+
+    <br />
+    <center>
+      <div
+        id="searchMain"
+        class="container bg-secondary"
+        style="width: auto; height: auto"
+      >
+        <!-- script goes here-->
+      </div>
+    </center>
+
+    <br />
+  </body>
+  <script type="text/javascript" src="./draw.js"></script>
+  <script src="./search.js"></script>
+</html>

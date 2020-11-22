@@ -1,0 +1,40 @@
+.card {
+  animation-name: fade-in;
+  opacity: 0;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+#mainBox {
+  opacity: 0;
+  animation: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#searchMain {
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.single_search_box {
+  margin: 0.8%;
+  opacity: 0;
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+}
+
+.single_search_box_text {
+  margin-top: 10px;
+}
