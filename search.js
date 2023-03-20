@@ -41,7 +41,6 @@ function LinearSearch() {
   let box = mainDiv.firstElementChild;
   let value = box.firstElementChild.innerHTML;
 
-  let i = end - start + 1;
   let found = false;
 
   function ls(value) {
